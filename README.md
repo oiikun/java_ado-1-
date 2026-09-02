@@ -1,18 +1,23 @@
-## Getting Started
+# Baú de Itens - Resident Evil (Java)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## O que é
 
-## Folder Structure
+Aplicação em Java feita para a atividade de faculdade sobre **Array e manipulação de dados** (Aula 02 e 03). Simula o clássico "Baú de Itens" (Item Box) da série Resident Evil, onde o jogador escolhe itens de um catálogo (armas, munições, itens de cura e itens-chave) e os guarda em um baú com capacidade limitada.
 
-The workspace contains two folders by default, where:
+## O que faz
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Exibe um **catálogo** de itens do universo Resident Evil (raridade, munição usada, se cura ou não, custo em pecetas).
+- Permite **incluir** itens do catálogo no baú, informando a quantidade.
+- Permite **pesquisar**, **alterar** (quantidade) e **excluir** itens já armazenados no baú.
+- O baú tem capacidade fixa de **10 itens**.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Estrutura
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- `Item.java` — classe que representa um item (dados e atributos).
+- `Catalogo.java` — lista fixa de itens disponíveis para pegar.
+- `Vetor.java` — classe responsável por manipular o array do baú (incluir, pesquisar, alterar, excluir).
+- `App.java` — classe principal, com o menu de interação com o usuário.
 
-## Dependency Management
+## Por que foi feito
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Requisito da atividade era usar **array puro** (sem ArrayList) para praticar manipulação manual de vetores em Java. Escolhi o tema Resident Evil como forma de deixar a prática mais divertida de implementar e testar.
